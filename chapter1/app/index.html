@@ -7,6 +7,12 @@
     <script src="./app.js"></script>
 </head>
 <body class="sans-serif pa4">
+    <div class="absolute right-1 top-1 tc pt4 left f5 pb3 bg-black-80 w4 h4 shadow-2 br4 white">You have
+        <div class="f3 mt3">
+            <span id="accountBalance" class="b"></span>
+            TodoCoin
+        </div>
+    </div>
     <div class="tc f2 mt6 near-black">Reward a doer for their hard work - send
     them TodoCoin</div>
     <div class="pa4 mt4 bg-white shadow-1 br2 tc mw7 center">
@@ -20,9 +26,9 @@
                         id="todoCoinReward"
                         placeholder="Amount in TodoCoin">
                 </div>
-                <div class="">
+                <div class="mt3 ph3 pa0-l">
                     <input
-                        class=""
+                        class="pa3 input-reset ba b--black-30 br2 bg-white-90 w-100"
                         type="text"
                         ip="doer"
                         placeholder="Address">
@@ -30,8 +36,9 @@
             </fieldset>
         </form>
         <button
-            class="">→
+            class="white pa3 ph4 bg-green br2 f3 b pointer">→
         </button>
     </div>
+    <div id="transactionStatus" class="pt4"></div>
 </body>
 </html>
