@@ -44,6 +44,10 @@ window.TaskMasterApp = {
         });
     },
 
+    updateTransactionStatus: function(statusMessage) {
+        document.getElementById("transactionStatus").innerHTML = statusMessage;
+    },
+
     rewardDoer: function() {
         var self = this;
 
@@ -56,11 +60,11 @@ window.TaskMasterApp = {
                     from: ownerAccount
                 });
             }).then(function() {
-                //self.updateTransactionStatus("Transaction complete!");
+                self.updateTransactionStatus("Transaction complete!");
                 self.refreshAccountBalance();
             }).catch(function(e) {
                 console.log(e);
-                //self.updateTransactionStatus("Error sending reward - see console.");
+                self.updateTransactionStatus("Error sending reward - see console.");
             });
         },
 };
