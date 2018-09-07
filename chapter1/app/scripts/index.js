@@ -39,7 +39,7 @@ window.TaskMasterApp = {
                 return;
             }
 
-            ownerAccount = accounts[1];
+            ownerAccount = accounts[0];
             self.refreshAccountBalance();
         });
     },

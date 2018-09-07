@@ -5,6 +5,7 @@ contract TaskMaster {
     address public owner; // owner of the contract
 
     constructor() public {
+        owner = msg.sender;
         balances[msg.sender] = 10000;
     }
 
